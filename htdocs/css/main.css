@@ -1,0 +1,59 @@
+body {
+    margin: 2em;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* Style the form */
+#regForm {
+    margin: 3px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #eee;
+  }
+    
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  #buttondiv {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #buttondiv>button{
+      margin-right: 10px;
+  }
+
+  .radiogroup {
+      margin-bottom: 2em;
+  }
+
+  #circlediv {
+    text-align:center;
+    margin-top:40px;
+  }

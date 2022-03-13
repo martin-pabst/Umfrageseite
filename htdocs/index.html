@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Umfrage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/jquery.js'></script>
+    <script src='js/bootstrap/bootstrap.bundle.min.js'></script>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <h1>Umfrage</h1>
+    <form id="regForm" action="submit" method="post">
+
+        <!-- Erste Seite -->
+        <div class="tab">
+            <div class="radiogroup">
+                <h2>Frühstück:</h2>
+                <div class="form-check">
+                    <input class="form-check-input" value="a" type="radio" name="frage1" id="frage1a">
+                    <label class="form-check-label" for="frage1a">Toast</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="b" type="radio" name="frage1" id="frage1b">
+                    <label class="form-check-label" for="frage1b">Kaffee</label>
+                </div>
+            </div>
+            <div class="radiogroup">
+                <h2>Mittagessen:</h2>
+                <div class="form-check">
+                    <input class="form-check-input" value="a" type="radio" name="frage2" id="frage2a">
+                    <label class="form-check-label" for="frage2a">Pommes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="b" type="radio" name="frage2" id="frage2b">
+                    <label class="form-check-label" for="frage2b">Pizza</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zweite Seite -->
+        <div class="tab">
+            <div class="radiogroup">
+                <h2>Lieblingsautor:</h2>
+                <div class="form-check">
+                    <input class="form-check-input" value="a" type="radio" name="frage3" id="frage3a">
+                    <label class="form-check-label" for="frage3a">Terry Pratchett</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="b" type="radio" name="frage3" id="frage3b">
+                    <label class="form-check-label" for="frage3b">Bill Bryson</label>
+                </div>
+            </div>
+            <div class="radiogroup">
+                <h2>Lieblingsfach:</h2>
+                <div class="form-check">
+                    <input class="form-check-input" value="a" type="radio" name="frage4" id="frage4a">
+                    <label class="form-check-label" for="frage4a">Informatik</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="b" type="radio" name="frage4" id="frage4b">
+                    <label class="form-check-label" for="frage4b">Mathematik</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="c" type="radio" name="frage4" id="frage4c">
+                    <label class="form-check-label" for="frage4c">Physik</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="overflow:auto;">
+            <div id="buttondiv">
+                <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Zurück</button>
+                <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Weiter</button>
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div id="circlediv">
+        </div>
+
+    </form>
+</body>
+
+</html>
